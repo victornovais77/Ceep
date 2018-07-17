@@ -24,6 +24,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	text-indent: -99999px;
+	transition: opacity .3s;
 }
 
 .opcoesDoCartao-opcao:first-child {
@@ -56,3 +57,11 @@
 	background: currentcolor;
 	border: 5px solid rgba(0,0,0,.5);
 }
+
+.opcoesDoCartao{
+	opacity: 0;
+	pointer-events: none;
+	transition: .5s;
+}
+
+
