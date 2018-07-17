@@ -2,6 +2,7 @@
 
     const cartoes = document.querySelectorAll('.cartao')
 
+
     for (let cartao of cartoes) {
 
         cartao.addEventListener('focusin', function () {
@@ -36,7 +37,19 @@
             }
         })
 
-    }
 
+        cartao.addEventListener('click', function (event) {
+            const Elementocartoes = event.target;
+
+            const isExclueCartao = Elementocartoes.classList.contains('opcoesDoCartao-remove')
+            if(isExclueCartao){
+                cartao.classList.add("cartao--some");
+                cartao.addEventListener("transitionend", function () {
+                    cartao.remove();
+                })
+            }
+        })
+
+    }
 
 })()
