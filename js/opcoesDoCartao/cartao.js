@@ -41,8 +41,9 @@
         cartao.addEventListener('click', function (event) {
             const Elementocartoes = event.target;
 
-            const isExclueCartao = Elementocartoes.classList.contains('opcoesDoCartao-remove')
-            if(isExclueCartao){
+            const isRemoveCartao = Elementocartoes.classList.contains('opcoesDoCartao-remove')
+
+            if (isRemoveCartao) {
                 cartao.classList.add("cartao--some");
                 cartao.addEventListener("transitionend", function () {
                     cartao.remove();
