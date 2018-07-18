@@ -24,7 +24,9 @@
                 msgErro.remove();
             })
         } else {
-            adicionaCartaoNoMural(conteudo)
+
+            const conteudodoCartao = conteudo;
+            adicionaCartaoNoMural({conteudo:conteudodoCartao})
 
         }
     })

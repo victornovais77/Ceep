@@ -1,12 +1,12 @@
 
 let contador = document.querySelectorAll('.opcoesDoCartao').length
-function adicionaCartaoNoMural(conteudo){
+function adicionaCartaoNoMural(cartaoObj){
     
     contador++
-    const valorDoTextArea = conteudo;
+    const valorDoTextArea = cartaoObj.conteudo;
     
     const cartao = $(`
-                 <article id="cartao_${contador}" class="cartao"  tabindex="0"> 
+                 <article id="cartao_${contador}" class="cartao" style ="background: ${cartaoObj.cor};"  tabindex="0"> 
                     <div class="opcoesDoCartao">
                         <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
                           <svg>
