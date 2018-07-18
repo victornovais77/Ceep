@@ -2,6 +2,8 @@
 
     const form = document.querySelector('.formNovoCartao')
 
+    
+
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -16,11 +18,15 @@
             console.log(msgErro)
 
             document.querySelector('.formNovoCartao-salvar')
-                          .insertAdjacentElement('beforebegin', msgErro);
+                .insertAdjacentElement('beforebegin', msgErro);
 
             msgErro.addEventListener('animationend', function () {
                 msgErro.remove();
             })
+        } else {
+            adicionaCartaoNoMural(conteudo)
+
         }
     })
+
 })()
