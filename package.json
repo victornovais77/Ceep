@@ -1,0 +1,17 @@
+{
+  "name": "ceep",
+  "version": "0.0.1",
+  "description": "Xablau",
+  "main": "teste.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "babel src --out-dir dist --presets env --copy-files --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

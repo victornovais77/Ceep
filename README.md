@@ -1,1 +1,1 @@
-Created By: Developer Victor Novais
+﻿Victor Novais
